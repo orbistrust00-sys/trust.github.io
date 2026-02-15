@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"></head>
+
+<body>
+  <h2>GitHub‑Pages demo</h2>
+
+  <p id="msg">…</p>
+
+  <!-- JavaScript to read the query string -->
+  <script>
+    // Grab the current URL’s search portion
+    const qs   = new URLSearchParams(window.location.search);
+
+    // Pick values you added after “?”
+    const foo  = qs.get('foo');          // "bar"
+    const baz  = qs.get('baz');          // "123"
+
+    document.getElementById('msg').innerText =
+      `You passed ?foo=${foo}&baz=${baz} to the page.`;
+  </script>
+</body>
+</html>
